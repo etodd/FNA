@@ -914,6 +914,13 @@ namespace Microsoft.Xna.Framework.Graphics
 					dstPtr[10] = value.M33;
 					dstPtr[11] = value.M34;
 				}
+				else if (ColumnCount == 2 && RowCount == 2)
+				{
+					dstPtr[0] = value.M11;
+					dstPtr[1] = value.M12;
+					dstPtr[2] = value.M21;
+					dstPtr[3] = value.M22;
+				}
 				else
 				{
 					throw new NotImplementedException(
